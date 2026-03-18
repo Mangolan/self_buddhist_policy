@@ -1,0 +1,212 @@
+<!DOCTYPE html>                                                                                                                                                                   
+  <html lang="ko">                                                                                                                                                                  
+    <head>                                                                                                                                                                          
+      <meta charset="UTF-8" />                                                                                                                                                      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                                                                                      
+      <title>개인정보처리방침</title>                                                                                                                                               
+      <style>                                                                                                                                                                       
+        :root {                                                                                                                                                                     
+          --bg-top: #1a0f1f;                                                                                                                                                        
+          --bg-bottom: #0a0a0c;                                                                                                                                                     
+          --panel: rgba(27, 16, 53, 0.88);                                                                                                                                          
+          --panel-strong: rgba(39, 22, 79, 0.95);                                                                                                                                   
+          --border: rgba(206, 182, 255, 0.22);                                                                                                                                      
+          --text: #f5ebff;                                                                                                                                                          
+          --muted: #d7c7ef;                                                                                                                                                         
+          --accent: #ceb6ff;                                                                                                                                                        
+          --accent-strong: #8e6bff;                                                                                                                                                 
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        * {                                                                                                                                                                         
+          box-sizing: border-box;                                                                                                                                                   
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        body {                                                                                                                                                                      
+          margin: 0;                                                                                                                                                                
+          font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;                                                                                                                 
+          color: var(--text);                                                                                                                                                       
+          background:                                                                                                                                                               
+            radial-gradient(circle at top center, rgba(179, 136, 255, 0.2), transparent 32%),                                                                                       
+            linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);                                                                                                       
+          min-height: 100vh;                                                                                                                                                        
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .wrap {                                                                                                                                                                     
+          width: min(920px, calc(100% - 32px));                                                                                                                                     
+          margin: 0 auto;                                                                                                                                                           
+          padding: 48px 0 56px;                                                                                                                                                     
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .hero {                                                                                                                                                                     
+          text-align: center;                                                                                                                                                       
+          margin-bottom: 24px;                                                                                                                                                      
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .eyebrow {                                                                                                                                                                  
+          display: inline-block;                                                                                                                                                    
+          margin-bottom: 14px;
+          padding: 7px 14px;                                                                                                                                                        
+          border: 1px solid var(--border);                                                                                                                                          
+          border-radius: 999px;
+          font-size: 12px;                                                                                                                                                          
+          letter-spacing: 0.18em;                                                                                                                                                   
+          color: var(--accent);                                                                                                                                                     
+          background: rgba(255, 255, 255, 0.04);                                                                                                                                    
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        h1 {                                                                                                                                                                        
+          margin: 0 0 14px;                                                                                                                                                         
+          font-size: clamp(32px, 4vw, 46px);                                                                                                                                        
+          font-weight: 800;                                                                                                                                                         
+          letter-spacing: -0.03em;                                                                                                                                                  
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .lead {                                                                                                                                                                     
+          max-width: 720px;                                                                                                                                                         
+          margin: 0 auto;                                                                                                                                                           
+          color: var(--muted);                                                                                                                                                      
+          font-size: 16px;                                                                                                                                                          
+          line-height: 1.8;                                                                                                                                                         
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .card {                                                                                                                                                                     
+          background: var(--panel);                                                                                                                                                 
+          border: 1px solid var(--border);                                                                                                                                          
+          border-radius: 28px;                                                                                                                                                      
+          padding: 32px 24px;                                                                                                                                                       
+          box-shadow:                                                                                                                                                               
+            0 18px 40px rgba(0, 0, 0, 0.35),                                                                                                                                        
+            inset 0 1px 0 rgba(255, 255, 255, 0.04);                                                                                                                                
+          backdrop-filter: blur(10px);                                                                                                                                              
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .meta {                                                                                                                                                                     
+          margin: 0 0 20px;                                                                                                                                                         
+          color: var(--accent);                                                                                                                                                     
+          font-size: 14px;                                                                                                                                                          
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .notice,                                                                                                                                                                    
+        .box,                                                                                                                                                                       
+        .footer {                                                                                                                                                                   
+          background: var(--panel-strong);                                                                                                                                          
+          border: 1px solid var(--border);                                                                                                                                          
+          border-radius: 18px;                                                                                                                                                      
+          padding: 18px;                                                                                                                                                            
+          line-height: 1.8;                                                                                                                                                         
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .notice {                                                                                                                                                                   
+          margin-bottom: 28px;                                                                                                                                                      
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .box {                                                                                                                                                                      
+          margin: 14px 0 28px;                                                                                                                                                      
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        h2 {                                                                                                                                                                        
+          margin: 28px 0 10px;                                                                                                                                                      
+          font-size: 22px;                                                                                                                                                          
+          color: var(--accent);                                                                                                                                                     
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        p {                                                                                                                                                                         
+          margin: 0;                                                                                                                                                                
+          line-height: 1.9;                                                                                                                                                         
+          color: var(--text);                                                                                                                                                       
+        }                                                                                                                                                                           
+                                                                                                                                                                                    
+        .footer {                                                                                                                                                                   
+          margin-top: 32px;                                                                                                                                                         
+          color: var(--muted);                                                                                                                                                      
+        }
+                                                                                                                                                                                    
+        @media (max-width: 640px) {                                                                                                                                                 
+          .wrap {                                                                                                                                                                   
+            width: min(100% - 20px, 920px);                                                                                                                                         
+            padding: 28px 0 36px;                                                                                                                                                   
+          }                                                                                                                                                                         
+                                                                                                                                                                                    
+          .card {                                                                                                                                                                   
+            padding: 24px 18px;                                                                                                                                                     
+            border-radius: 22px;                                                                                                                                                    
+          }                                                                                                                                                                         
+                                                                                                                                                                                    
+          h2 {                                                                                                                                                                      
+            font-size: 19px;                                                                                                                                                        
+          }                                                                                                                                                                         
+                                                                                                                                                                                    
+          .lead,                                                                                                                                                                    
+          p,                                                                                                                                                                        
+          .notice,                                                                                                                                                                  
+          .box,                                                                                                                                                                     
+          .footer {                                                                                                                                                                 
+            font-size: 15px;                                                                                                                                                        
+          }                                                                                                                                                                         
+        }                                                                                                                                                                           
+      </style>                                                                                                                                                                      
+    </head>                                                                                                                                                                         
+    <body>                                                                                                                                                                          
+      <div class="wrap">                                                                                                                                                            
+        <header class="hero">                                                                                                                                                       
+          <div class="eyebrow">MAUM DEUNGBUL</div>                                                                                                                                  
+          <h1>개인정보처리방침</h1>                                                                                                                                                 
+          <p class="lead">                                                                                                                                                          
+            마음 등불은 사용자의 마음이 머무는 시간을 해치지 않는 방향으로 서비스를 구성합니다.                                                                                     
+            아래는 앱 이용 과정에서 처리될 수 있는 정보에 대한 안내입니다.                                                                                                          
+          </p>                                                                                                                                                                      
+        </header>                                                                                                                                                                   
+                                                                                                                                                                                    
+        <main class="card">                                                                                                                                                         
+          <p class="meta">시행일: 2026-02-24</p>                                                                                                                                    
+                                                                                                                                                                                    
+          <div class="notice">                                                                                                                                                      
+            본 앱은 사용자의 이름, 연락처, 위치 등 개인정보를 직접 입력받아 수집하지 않습니다.
+            다만 광고 서비스 제공 과정에서 일부 정보가 자동으로 처리될 수 있습니다.                                                                                                 
+          </div>                                                                                                                                                                    
+                                                                                                                                                                                    
+          <h2>1. 기본 수집 항목</h2>                                                                                                                                                
+          <p>                                                                                                                                                                       
+            마음 등불은 회원가입 기능을 제공하지 않으며, 이름, 전화번호, 이메일 주소,                                                                                               
+            정확한 위치 정보 등 개인정보를 직접 수집하지 않습니다.                                                                                                                  
+          </p>                                                                                                                                                                      
+                                                                                                                                                                                    
+          <h2>2. 광고(AdMob) 관련 정보 수집</h2>                                                                                                                                    
+          <p>                                                                                                                                                                       
+            본 앱은 Google AdMob 광고를 사용할 수 있으며, 광고 제공 및 성과 측정을 위해                                                                                             
+            아래 정보가 자동으로 수집·처리될 수 있습니다.                                                                                                                           
+          </p>                                                                                                                                                                      
+          <div class="box">                                                                                                                                                         
+            광고 식별자(AAID/IDFA), 기기 정보(모델명, OS 버전, 언어 설정),                                                                                                          
+            네트워크 정보(IP 주소, 접속 상태), 광고 노출·클릭 정보,                                                                                                                 
+            국가/도시 수준의 대략적 위치 정보                                                                                                                                       
+          </div>                                                                                                                                                                    
+                                                                                                                                                                                    
+          <h2>3. 이용 목적</h2>                                                                                                                                                     
+          <p>                                                                                                                                                                       
+            수집된 정보는 맞춤형 또는 비맞춤형 광고 제공, 광고 성과 측정,                                                                                                           
+            서비스 품질 개선과 안정성 확인을 위해 사용될 수 있습니다.                                                                                                               
+          </p>                                                                                                                                                                      
+                                                                                                                                                                                    
+          <h2>4. 보관 기간</h2>                                                                                                                                                     
+          <p>                                                                                                                                                                       
+            본 앱은 서버에 개인정보를 저장하지 않으며, 앱 종료 시 입력 정보는 즉시 삭제됩니다.                                                                                      
+          </p>                                                                                                                                                                      
+
+          <h2>5. 제3자 제공</h2>                                                                                                                                                    
+          <p>                                                                                                                                                                       
+            광고 제공을 위해 Google(AdMob) 등 제3자에게 위 정보가 제공될 수 있습니다.                                                                                               
+          </p>                                                                                                                                                                      
+                                                                                                                                                                                    
+          <h2>7. 문의</h2>                                                                                                                                                          
+          <p>                                                                                                                                                                       
+            정책 관련 문의는 tihd1489@naver.com으로 연락해주세요.                                                                                                                   
+          </p>                                                                                                                                                                      
+                                                                                                                                                                                    
+          <div class="footer">                                                                                                                                                      
+            본 방침은 앱 기능, 사용 SDK, 관련 법령 또는 운영 방식의 변경에 따라 수정될 수 있습니다.                                                                                 
+          </div>                                                                                                                                                                    
+        </main>                                                                                                                                                                     
+      </div>                                                                                                                                                                        
+    </body>                                                                                                                                                                         
+  </html>  
